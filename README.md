@@ -1,4 +1,4 @@
-[![License: CC BY-NC-SA 3.0](https://shields.io)](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+[![License: CC BY-NC-SA 3.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/3.0/)
 
 # Full Metal Jacket C++ Port
 
@@ -31,4 +31,5 @@ cmake --build build --config Release
 This project is distributed under the same license as the original repository.
 
 Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
 Copyright(c) 1995, 1996 Mirinae Software, Inc.
