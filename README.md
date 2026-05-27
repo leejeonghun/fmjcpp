@@ -1,26 +1,34 @@
-# Full Metal Jacket
-Full Metal Jacket (c)1995, 1996 Mirinae Software, Inc.
+[![License: CC BY-NC-SA 3.0](https://shields.io)](https://creativecommons.org/licenses/by-nc-sa/3.0/)
 
-![FMJ](fullmetaljacket.jpg)
+# Full Metal Jacket C++ Port
 
-This is the all files of excutables, data and source files of PC game Full Metal Jacket.
+![screenshot](https://github.com/user-attachments/assets/77f90448-9214-4a3f-b787-a14575363ac5)
 
-Full Metal Jacket was first released on Dec. 1995 in Korea.
+Full Metal Jacket (c) 1995, 1996 Mirinae Software, Inc.
 
-(Copyrights)1995, 1996 Mirinae Software, Inc. 
-License: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+## Overview
+* This repository is a C++ port of https://github.com/idgmatrix/FMJ using SDL.
+* All code in this repository was generated using LLMs.
+* Only free-tier LLM services and models were used (Gemini CLI, https://aistudio.google.com).
 
-You may run the game using DOS-BOX.
+## Build
 
-* FMJ.exe is the game excutable file. 
-* readme.exe is the manual for the game. 
-* install.exe is setup program for game.
+### Linux
+```bash
+cmake -B build -S .
+cmake --build build
+```
 
-If you want build project, you may need 
+### Windows (Command Prompt for VS)
+```bash
+vcpkg x-update-baseline --add-initial-baseline
+cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE="%VCPKG_ROOT%/scripts/buildsystems/vcpkg.cmake" -DVCPKG_TARGET_TRIPLET=x64-windows-static -DCMAKE_BUILD_TYPE=Release
+cmake --build build --config Release
+```
 
-* Watcom C/C++ Compiler
-* Turbo Assembler.
+## License
 
-Full Metal Jacket used Tiny MOD Player v2.11 for BGM play.
+This project is distributed under the same license as the original repository.
 
-![FMJ](fullmetaljacket-1.png) ![FMJ](fullmetaljacket-3.png) ![FMJ](fullmetaljacket-4.png) ![FMJ](fullmetaljacket-5.png)
+Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+Copyright(c) 1995, 1996 Mirinae Software, Inc.
